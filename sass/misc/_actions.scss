@@ -1,0 +1,40 @@
+.grow {
+  @include transition(all $animation-speed ease-in-out);
+  &:hover {
+    @include scale($grow-scale);
+  }
+  &.blue {
+    background-color: $blue;
+  }
+}
+
+.raised {
+  @include transition(all $animation-speed ease-in-out);
+  @include box-shadow($shadow-normal);
+  cursor: pointer;
+  &:hover {
+    @include box-shadow($shadow-clicked);
+  }
+  &:active {
+    @include box-shadow($shadow-normal);
+  }
+}
+
+/**************************************/
+/**************** MISC ****************/
+/**************************************/
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}

@@ -1,0 +1,15 @@
+$blue:#4285f4;
+$red:#e51c23;
+$green: #0f9d58;
+$black: #000000;
+$grow-scale: 1.2 !default;
+$animation-speed: 0.1s !default;
+$shadow-color: rgba(0, 0, 0, 0.4) !default;
+$shadow-normal: 0 2px 5px 0 $shadow-color !default;
+$shadow-clicked: 0 8px 17px 0 $shadow-color !default;
+$shadow-z-1: 0 2px 10px 0 rgba(0, 0, 0, 0.16) !default;
+$shadow-z-1-after: 0 2px 5px 0 rgba(0, 0, 0, 0.26) !default;
+$shadow-z-2: 0 17px 50px 0 rgba(0, 0, 0, 0.19) !default;
+$shadow-z-2-after: 0 12px 15px 0 rgba(0, 0, 0, 0.24) !default;
+$shadow-z-3: 0 27px 24px 0 rgba(0, 0, 0, 0.2) !default;
+$shadow-z-3-after: 0 40px 77px 0 rgba(0, 0, 0, 0.22) !default;
