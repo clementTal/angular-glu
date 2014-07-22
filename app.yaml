@@ -11,7 +11,6 @@ handlers:
 
 - url: /templates
   static_dir: templates
-  application_readable: true
 
 - url: /css
   static_dir: css
