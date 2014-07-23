@@ -79,7 +79,7 @@
   text-align: center;
   padding-top: $sub-menu-padding;
   z-index: 2;
-   @include box-shadow($shadows-bottom);
+  @include box-shadow($shadows-bottom);
   .sub-menu-item
   {
     height: $menu-height/2;
@@ -95,5 +95,9 @@
     {
       border-bottom: $sub-menu-border;
     }
+  }
+  a
+  {
+      text-decoration: none;
   }
 }

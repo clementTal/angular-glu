@@ -214,6 +214,51 @@
   box-shadow: 0 40px 77px 0 rgba(0, 0, 0, 0.22);
 }
 
+/* line 4, ../sass/misc/_dialog.scss */
+.dialog:before {
+  content: "";
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+/* line 14, ../sass/misc/_dialog.scss */
+.dialog:target:before {
+  display: block;
+}
+/* line 17, ../sass/misc/_dialog.scss */
+.dialog:target .dialog-content {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  top: 20%;
+}
+
+/* line 26, ../sass/misc/_dialog.scss */
+.dialog-content {
+  margin-left: -200px;
+  position: fixed;
+  left: 50%;
+  top: -100%;
+  z-index: 11;
+  width: 360px;
+  -webkit-transform: translate(0, -500%);
+  -moz-transform: translate(0, -500%);
+  -ms-transform: translate(0, -500%);
+  -o-transform: translate(0, -500%);
+  transform: translate(0, -500%);
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
 /* line 2, ../sass/misc/_divider.scss */
 .divider {
   width: 100%;
@@ -542,20 +587,24 @@ a.link.default {
 .sub-menu .sub-menu-item:hover {
   border-bottom: 3px solid #36474f;
 }
+/* line 100, ../sass/misc/_menu.scss */
+.sub-menu a {
+  text-decoration: none;
+}
 
-/* line 11, ../sass/_material.scss */
+/* line 12, ../sass/_material.scss */
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 15, ../sass/_material.scss */
+/* line 16, ../sass/_material.scss */
 .container {
   font-family: 'Roboto', sans-serif;
   margin: 110px 100px 50px 100px;
 }
 
-/* line 21, ../sass/_material.scss */
+/* line 22, ../sass/_material.scss */
 .center {
   text-align: center;
 }
