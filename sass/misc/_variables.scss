@@ -1,15 +1,57 @@
+$primary-color: #607d8b;
 $blue:#4285f4;
 $red:#e51c23;
 $green: #0f9d58;
 $black: #000000;
-$grow-scale: 1.2 !default;
-$animation-speed: 0.1s !default;
+$grey: #A2A2A2;
+
+/***********************/
+/********* LINK ********/
+/***********************/
+$primary-link-color: #00b0ff;
+$secondary-link-color: #fb8c00;
+$default-link-color: $grey;
+$light-grey: #E2E2E2;
+
+/***********************/
+/********* MENU ********/
+/***********************/
+$top-menu-height: 60px !default;
+$sub-menu-font: 17px !default;
+$sub-menu-border-height: 3px !default;
+$top-menu-font: 30px !default;
+$top-menu-padding: $top-menu-height - $top-menu-font - 20;
+$sub-menu-border: $sub-menu-border-height solid darken($primary-color, 20);
+$sub-menu-padding: $top-menu-height/2 - $sub-menu-font - $sub-menu-border-height*3;
+$sub-menu-height: $top-menu-height/2 - $sub-menu-padding;
+$menu-height: $top-menu-height + $top-menu-height/2;
+
+/***********************/
+/******* DIVIDER *******/
+/***********************/
+$divider-color: $light-grey;
+
+/***********************/
+/********* CARD ********/
+/***********************/
+$card-border: 1px solid $light-grey;
+
+/***********************/
+/******* SHADOWS *******/
+/***********************/
 $shadow-color: rgba(0, 0, 0, 0.4) !default;
 $shadow-normal: 0 2px 5px 0 $shadow-color !default;
 $shadow-clicked: 0 8px 17px 0 $shadow-color !default;
+$shadows-bottom: 0 4px 2px -2px $shadow-color !default;
 $shadow-z-1: 0 2px 10px 0 rgba(0, 0, 0, 0.16) !default;
 $shadow-z-1-after: 0 2px 5px 0 rgba(0, 0, 0, 0.26) !default;
 $shadow-z-2: 0 17px 50px 0 rgba(0, 0, 0, 0.19) !default;
 $shadow-z-2-after: 0 12px 15px 0 rgba(0, 0, 0, 0.24) !default;
 $shadow-z-3: 0 27px 24px 0 rgba(0, 0, 0, 0.2) !default;
 $shadow-z-3-after: 0 40px 77px 0 rgba(0, 0, 0, 0.22) !default;
+
+/***********************/
+/****** ANIMATIONS *****/
+/***********************/
+$grow-scale: 1.2 !default;
+$animation-speed: 0.1s !default;

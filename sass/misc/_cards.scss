@@ -1,0 +1,57 @@
+.card {
+  display: inline-block;
+  position: relative;
+  font-size: 15px;
+  background-color: #fff;
+  color: #646464;
+  border: $card-border;
+  margin-bottom: 30px;
+  padding: 5px 15px;
+  &.card-rounded
+  {
+      border-radius: 5px;
+  }
+  .card-header
+  {
+      padding-bottom: 20px;
+      font-size: 20px;
+      text-transform: capitalize;
+      color: $primary-color;
+      width: 100%;
+      @include ellipsis;
+  }
+  .card-content
+  {
+      font-size: 15px;
+  }
+  .card-footer
+  {
+      padding-top: 20px;
+      text-align: right;
+      color: $grey;
+  }
+}
+
+.card-z-1 {
+  @include box-shadow($shadow-z-1);
+  &:after
+  {
+  	@include box-shadow($shadow-z-1-after);
+  }
+}
+
+.card-z-2 {
+  @include box-shadow($shadow-z-2);
+  &:after
+  {
+    @include box-shadow($shadow-z-2-after);
+  }
+}
+
+.card-z-3 {
+  @include box-shadow($shadow-z-3);
+  &:after
+  {
+    @include box-shadow($shadow-z-3-after);
+  }
+}

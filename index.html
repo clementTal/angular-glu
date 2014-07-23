@@ -5,9 +5,30 @@
 <body>
 <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-<div class="container">
-    <h1>Inputs</h1>
 
+<div class="menu fixed">
+  <div class="menu-logo">
+    <i class="fa fa-image"></i>
+  </div>
+  <div class="menu-title">
+    <span>APP NAME</span>
+  </div>
+  <div class="menu-options">
+    <div class="fa fa-navicon">
+      <ul class="option-item">
+        <li>test</li>
+      </ul>
+  	</div>
+	</div>
+</div>
+<div class="sub-menu">
+  <div class="sub-menu-item">Menu 1</div>
+  <div class="sub-menu-item">Menu 2</div>
+  <div class="sub-menu-item">Menu 2</div>
+</div>
+
+<div class="container card card-z-1">
+    <h1>Inputs</h1>
     <form>
         <div class="group">
             <input type="text" required>
@@ -22,6 +43,7 @@
             <label>Password</label>
         </div>
     </form>
+    <div class="divider"></div>
     <h1>Button</h1>
 
     <div class="button raised blue">
@@ -30,7 +52,7 @@
     <div class="button raised red">
         <div class="center">CANCEL</div>
     </div>
-    <h1>Rounds</h1>
+    <h2>Rounds</h2>
 
     <div class="round raised red">
         <i class="icon fa fa-cog"></i>
@@ -44,7 +66,7 @@
     <div class="round grow green">
         <i class="icon fa fa-tag"></i>
     </div>
-    <h1>Icons</h1>
+    <h2>Icons</h2>
 
     <div class="symbs raised center">
         <i class="fa fa-cog"></i>
@@ -58,27 +80,81 @@
     <div class="symbs green inv grow center">
         <i class="fa fa-tag"></i>
     </div>
-    <h1>Shadows</h1>
 
-    <div class="layout center layout-z-1">
-        <p>Z depth 1</p>
+    <div class="divider"></div>
+    <h1>Cards</h1>
+    <div class="card card-z-1">
+        <div class="card-header">
+            square depth 1
+        </div>
+        <div class="card-content">
+            A square card with a depth of one
+        </div>
+        <div class="card-footer">
+            <a href="#" class="link secondary">close</a>
+            <a href="#" class="link primary">open</a>
+        </div>
     </div>
-    <div class="layout center layout-z-2">
-        <p>Z depth 2</p>
+    <div class="card card-z-2">
+        <div class="card-header">
+            square depth 2
+        </div>
+        <div class="card-content">
+            A square card with a depth of two
+        </div>
+        <div class="card-footer">
+            <a href="#" class="link default">cancel</a>
+            <a href="#" class="link secondary">delete</a>
+        </div>
     </div>
-    <div class="layout center layout-z-3">
-        <p>Z depth 3</p>
+    <div class="card card-z-3">
+        <div class="card-header">
+            square depth 3
+        </div>
+        <div class="card-content">
+            A square card with a depth of tree
+        </div>
+        <div class="card-footer">
+            <a href="#" class="link secondary">delete</a>
+            <a href="#" class="link primary">save</a>
+        </div>
     </div>
-    <div class="layout menu center layout-z-1">
-        <p>layout menu z1</p>
+    <div class="card card-rounded card-z-1">
+        <div class="card-header">
+            rounded depth 1
+        </div>
+        <div class="card-content">
+            A rounded card with a depth of one
+        </div>
+        <div class="card-footer">
+            <a href="#" class="link secondary">close</a>
+            <a href="#" class="link primary">open</a>
+        </div>
     </div>
-    <div class="layout menu center layout-z-2">
-        <p>layout menu z2</p>
+    <div class="card card-rounded card-z-2">
+        <div class="card-header">
+            rounded depth 2
+        </div>
+        <div class="card-content">
+            A rounded card with a depth of two
+        </div>
+        <div class="card-footer">
+            <a href="#" class="link default">cancel</a>
+            <a href="#" class="link secondary">delete</a>
+        </div>
     </div>
-    <div class="layout menu center layout-z-3">
-        <p>layout menu z3</p>
+    <div class="card card-rounded card-z-3">
+        <div class="card-header">
+            rounded depth 3
+        </div>
+        <div class="card-content">
+            A rounded card with a depth of tree
+        </div>
+        <div class="card-footer">
+            <a href="#" class="link secondary">close</a>
+            <a href="#" class="link primary">open</a>
+        </div>
     </div>
-
 </div>
 </body>
 </html>

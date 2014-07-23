@@ -1,14 +1,21 @@
 @import "misc/variables";
 @import "misc/actions";
 @import "misc/button";
+@import "misc/cards";
+@import "misc/divider";
 @import "misc/forms";
 @import "misc/icons";
-@import "misc/layout";
+@import "misc/links";
+@import "misc/menu";
 
-
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
 .container {
   font-family: 'Roboto', sans-serif;
-  padding-bottom: 50px;
+  margin: $menu-height + 20px 100px 50px 100px;
+
 }
 
 .center {
