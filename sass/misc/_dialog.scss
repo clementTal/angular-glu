@@ -16,7 +16,7 @@
     }  
     .dialog-content{
       @include translate(0, 0);
-      top: 20%;  
+      top: 20%;
     }
      
   }
@@ -31,5 +31,5 @@
   z-index: 11; 
   width: 360px;
   @include translate(0, -500%);
-  @include transition(0.3s ease-out);
+  @include transition(0.4s ease-in-out);
 }
