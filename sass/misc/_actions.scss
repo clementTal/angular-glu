@@ -1,7 +1,7 @@
 .grow {
   @include transition(all $animation-speed ease-in-out);
   &:hover {
-    @include scale($grow-scale);
+    @include animation(scale $grow-scale);
   }
   &.blue {
     background-color: $blue;
