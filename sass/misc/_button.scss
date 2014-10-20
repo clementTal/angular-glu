@@ -1,12 +1,13 @@
 .button {
   width: 120px;
-  height: 32px;
-  line-height: 32px;
+  height: $button-height;
+  line-height: $button-height;
   @include border-radius(2px);
   font-size: 0.9em;
   background-color: #fff;
   color: #646464;
   cursor: pointer;
+  display: inline-block;
   &.blue {
     background-color: $blue;
     color: #fff;
@@ -29,8 +30,10 @@
 {
   position: relative;
   display: inline-block;
-  width: 56px;
-  height: 56px;
+  width: $round-size;
+  height: $round-size;
+  line-height: $round-size;
+  text-align: center;
   border-radius: 50%;
   color: #fff;
   overflow: hidden;
@@ -49,8 +52,5 @@
   &.inv
   {
     color: $black;
-  }
-  .icon {
-    margin: 21px;
   }
 }

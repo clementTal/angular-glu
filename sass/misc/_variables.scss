@@ -5,6 +5,8 @@ $green: #0f9d58;
 $black: #000000;
 $grey: #A2A2A2;
 
+$body-color: white;
+
 /***********************/
 /********* LINK ********/
 /***********************/
@@ -16,15 +18,9 @@ $light-grey: #E2E2E2;
 /***********************/
 /********* MENU ********/
 /***********************/
-$top-menu-height: 60px !default;
-$sub-menu-font: 17px !default;
-$sub-menu-border-height: 3px !default;
-$top-menu-font: 30px !default;
-$top-menu-padding: $top-menu-height - $top-menu-font - 20;
-$sub-menu-border: $sub-menu-border-height solid darken($primary-color, 20);
-$sub-menu-padding: $top-menu-height/2 - $sub-menu-font - $sub-menu-border-height*3;
-$sub-menu-height: $top-menu-height/2 - $sub-menu-padding;
-$menu-height: $top-menu-height + $top-menu-height/2;
+$menu-background-color: $primary-color !default;
+$menu-height: 75px !default;
+$sub-menu-color: darken($menu-background-color, 10);
 
 /***********************/
 /******* DIVIDER *******/
@@ -55,3 +51,16 @@ $shadow-z-3-after: 0 40px 77px 0 rgba(0, 0, 0, 0.22) !default;
 /***********************/
 $grow-scale: 1.2 !default;
 $animation-speed: 0.1s !default;
+
+
+/***********************/
+/******** BUTTON *******/
+/***********************/
+$round-size: 50px !default;
+$button-height: 30px !default;
+
+
+/***********************/
+/********* FORM ********/
+/***********************/
+$form-width: 300px !default;

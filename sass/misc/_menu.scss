@@ -1,103 +1,46 @@
 .menu
 {
-  position: relative;
-  top: 0;
-  height: $top-menu-height;
-  background-color: $primary-color;
   width: 100%;
-  color: white;
-  font-size: $top-menu-font;
-  padding-top: $top-menu-padding;
-  z-index: 1;
-  .menu-logo
+  height: $menu-height;
+  line-height: $menu-height;
+  background-color: $menu-background-color;
+  .menu-title 
   {
-    float: left;
-    padding-left: 10px;
-    height: $top-menu-height - $top-menu-padding;
+    padding: 0 10px;
+    display: inline-block;
   }
-  .menu-title
+  .menu-left
   {
-    text-align: left;
-    float: left;
-    padding-left: 30px;
-    height: $top-menu-height - $top-menu-padding;
-  }
-  .menu-options
-  {
-    float: right;
-    text-align: right;
-    padding-right: 10px;
-    height: $top-menu-height - $top-menu-padding;
-    backgorund-color: black;
-    .fa
+    margin-left: 50px;
+    padding: 0;
+    display: inline-block;
+    .menu-entry 
     {
-    	cursor: pointer;
-       &:hover .option-item
-       {
-          display: block;
-       }
-    }
-    .option-item
-    {
-      display: none;
-      float: left;
-      color: black;
-      border: 1px solid grey;
-      padding: 5px;
-      position: relative;
-      top: 0;
-      right: 0;
-      text-decoration: none;
-      list-style-type: none;
-      z-index: 200;
-      margin: 0;
+      padding: 0 20px;
+      display: inline-block;
+      cursor: pointer;
+      &.selected, &.selected:hover
+      {
+        background-color: $body-color;
+        color: #000000;
+      }
+      &:hover
+      {
+        background-color: $sub-menu-color;
+      }
     }
   }
-  &.fixed
+  .menu-right
   {
+    margin: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &.fixed {
     position: fixed;
     top: 0;
-    .option-item
-    {
-      position: fixed;
-      top: $top-menu-height;
-    }
-  }
-  .fa
-  {
-      padding-top: 6px;
-  }
-}
-
-.sub-menu
-{
-  position: fixed;
-  top: $top-menu-height;
-  height: $sub-menu-height;
-  background-color: darken($primary-color, 5);
-  width: 100%;
-  text-align: center;
-  padding-top: $sub-menu-padding;
-  z-index: 2;
-  @include box-shadow($shadows-bottom);
-  .sub-menu-item
-  {
-    height: $menu-height/2;
-    width: auto;
-    display: inline;
-    z-index: 20;
-    font-size: $sub-menu-font;
-    padding: 0 10px 0 10px;
-    cursor: pointer;
-    color: white;
-    text-transform: uppercase;
-    &:hover
-    {
-      border-bottom: $sub-menu-border;
-    }
-  }
-  a
-  {
-      text-decoration: none;
+    z-index: 100;
   }
 }
