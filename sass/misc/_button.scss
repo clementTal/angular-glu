@@ -34,6 +34,7 @@
   border-radius: 50%;
   color: #fff;
   overflow: hidden;
+  line-height: 56px;
   &.red {
     background-color: $red;
   }
@@ -49,8 +50,5 @@
   &.inv
   {
     color: $black;
-  }
-  .icon {
-    margin: 21px;
   }
 }
