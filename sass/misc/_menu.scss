@@ -3,44 +3,76 @@
   width: 100%;
   height: $menu-height;
   line-height: $menu-height;
-  background-color: $menu-background-color;
+  background-color: $menu-bg-color;
+  display: inline-block;
+  overflow: hidden;
   .menu-title 
   {
     padding: 0 10px;
     display: inline-block;
+    font-size: 20px;
+    color: white;
+    line-height: $menu-height;
   }
-  .menu-left
+  .menu-items
   {
     margin-left: 50px;
     padding: 0;
     display: inline-block;
+    float: right;
     .menu-entry 
     {
-      padding: 0 20px;
+      width: $menu-height;
+      height: $menu-height;
+      text-align: center;
       display: inline-block;
       cursor: pointer;
+      color: $menu-txt-color;
+      i
+      {
+        @include transition(0.5s ease-in-out); 
+      }
+      .helper
+      {
+        visibility: hidden;
+        display: inline-block;
+        font-size: 12px;
+      }
       &.selected, &.selected:hover
       {
-        background-color: $body-color;
-        color: #000000;
+        background-color: #FFFFFF;
+        color: $menu-txt-selected-color;
+        &.blue { background-color: $blue; }
+        &.red { background-color: $red; }
+        &.green { background-color: $green; }
+        &.amber { background-color: $amber; }
+        &.purple { background-color: $purple; }
+        i
+        {
+          color: $menu-txt-selected-color;
+        }
       }
       &:hover
       {
-        background-color: $sub-menu-color;
+        background-color: #777777;
+        color: $menu-txt-selected-color;
+        &.blue { background-color: $blue; }
+        &.red { background-color: $red; }
+        &.green { background-color: $green; }
+        &.amber { background-color: $amber; }
+        &.purple { background-color: $purple; }
+        i
+        {
+          visibility: visible;
+          @include transform(translateY(-50px));
+          color:white;
+        }
       }
     }
   }
   .menu-right
   {
+    float: right;
     margin: 10px;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  &.fixed {
-    position: fixed;
-    top: 0;
-    z-index: 100;
   }
 }

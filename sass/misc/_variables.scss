@@ -1,9 +1,12 @@
 $primary-color: #607d8b;
-$blue:#4285f4;
-$red:#e51c23;
-$green: #0f9d58;
+$blue: #738ffe;
+$red: #e84e40;
+$green: #9ccc65;
+$amber: #ffca28;
+$purple: #7e57c2;
 $black: #000000;
-$grey: #A2A2A2;
+$grey: #757575;
+$dark-grey: #424242;
 
 $body-color: white;
 
@@ -18,9 +21,10 @@ $light-grey: #E2E2E2;
 /***********************/
 /********* MENU ********/
 /***********************/
-$menu-background-color: $primary-color !default;
-$menu-height: 75px !default;
-$sub-menu-color: darken($menu-background-color, 10);
+$menu-height: 50px !default;
+$menu-bg-color: $grey !default;
+$menu-txt-color: white !default;
+$menu-txt-selected-color: $dark-grey !default;
 
 /***********************/
 /******* DIVIDER *******/
