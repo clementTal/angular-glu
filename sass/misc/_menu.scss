@@ -37,15 +37,16 @@
         visibility: hidden;
         display: inline-block;
         font-size: 12px;
+        font-weight: bold;
       }
       &.selected, &.selected:hover
       {
         background-color: #FFFFFF;
         color: $menu-txt-selected-color;
         &.blue { background-color: $blue; }
-        &.red { background-color: $red; }
+        &.pink { background-color: $pink; }
         &.green { background-color: $green; }
-        &.amber { background-color: $amber; }
+        &.cyan { background-color: $cyan; }
         &.purple { background-color: $purple; }
         i
         {
@@ -57,9 +58,9 @@
         background-color: #777777;
         color: $menu-txt-selected-color;
         &.blue { background-color: $blue; }
-        &.red { background-color: $red; }
+        &.pink { background-color: $pink; }
         &.green { background-color: $green; }
-        &.amber { background-color: $amber; }
+        &.cyan { background-color: $cyan; }
         &.purple { background-color: $purple; }
         i
         {
@@ -74,5 +75,10 @@
   {
     float: right;
     margin: 10px;
+  }
+  &.fixed
+  {
+    position: fixed;
+    top: 0px;
   }
 }
