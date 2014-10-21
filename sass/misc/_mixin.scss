@@ -1,0 +1,18 @@
+@mixin transition($property) {
+  -webkit-transition: $property;
+  transition: $property;
+}
+
+@mixin box-shadow($shadowValue) {
+  box-shadow: $shadowValue;
+}
+
+@mixin border-radius($size) {
+  border-radius: $size;
+}
+
+@mixin translate($start, $stop) {
+  -ms-transform: ($start ,$stop);
+  -webkit-transform: ($start ,$stop);
+  transform: ($start ,$stop);
+}
