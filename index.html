@@ -4,187 +4,196 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
-<body>
-
-
-<div class="menu card-z-1">
-  <div class="menu-title">
-    Menu title
-  </div>
-  <div class="menu-items">
-    <div class="menu-entry blue selected">
-      <i class="fa fa-th"></i><br>
-      <i class="helper">liste</i>
-    </div>
-    <div class="menu-entry pink">
-      <i class="fa fa-plus"></i><br>
-      <i class="helper">ajouter</i>
-    </div>
-    <div class="menu-entry green">
-      <i class="fa fa-info"></i><br>
-      <i class="helper">info</i>
-    </div>
-    <div class="menu-entry cyan">
-      <i class="fa fa-user"></i><br>
-      <i class="helper">compte</i>
-    </div>
-    <div class="menu-entry purple">
-      <i class="fa fa-sign-out"></i><br>
-      <i class="helper">logout</i>
-    </div>
-  </div>
-</div>
-
-<div class="container card card-z-1">
-    <h1>Inputs</h1>
-    <form class="form">
-        <div class="group">
-            <input type="text" required>
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label>Name</label>
+<body onload="init()">
+    <div class="menu card-z-1">
+      <div class="menu-title">
+        Menu title
+      </div>
+      <div class="menu-items">
+        <div class="menu-entry blue selected">
+          <i class="fa fa-th"></i><br>
+          <i class="helper">liste</i>
         </div>
-        <div class="group">
-            <input type="password" required>
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label>Password</label>
+        <div class="menu-entry pink">
+          <i class="fa fa-plus"></i><br>
+          <i class="helper">ajouter</i>
         </div>
-    </form>
-    <div class="divider"></div>
-    <h1>Button</h1>
-
-    <div class="button raised blue">
-        <div class="center">OK</div>
-    </div>
-    <div class="button raised red">
-        <div class="center">CANCEL</div>
-    </div>
-    <h2>Rounds</h2>
-
-    <div class="round raised red">
-        <span class="icon fa fa-cog"></span>
-    </div>
-    <div class="round grow raised blue inv">
-        <span class="icon fa fa-user"></span>
-    </div>
-    <div class="round black">
-        <span class="icon fa fa-plus-square"></span>
-    </div>
-    <div class="round grow green">
-        <span class="icon fa fa-tag"></span>
-    </div>
-    <h2>Icons</h2>
-
-    <div class="symbs raised center">
-        <i class="fa fa-cog"></i>
-    </div>
-    <div class="symbs raised grow red center">
-        <i class="fa fa-plus-square"></i>
-    </div>
-    <div class="symbs blue center">
-        <i class="fa fa-sign-in"></i>
-    </div>
-    <div class="symbs green inv grow center">
-        <i class="fa fa-tag"></i>
+        <div class="menu-entry green">
+          <i class="fa fa-info"></i><br>
+          <i class="helper">info</i>
+        </div>
+        <div class="menu-entry cyan">
+          <i class="fa fa-user"></i><br>
+          <i class="helper">compte</i>
+        </div>
+        <div class="menu-entry purple">
+          <i class="fa fa-sign-out"></i><br>
+          <i class="helper">logout</i>
+        </div>
+      </div>
     </div>
 
-    <div class="divider"></div>
-    <h1>Cards</h1>
-    <div class="card card-z-1">
+    <div class="container card card-z-1">
+        <h1>Inputs</h1>
+        <form class="form">
+            <div class="group">
+                <input type="text" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Name</label>
+            </div>
+            <div class="group">
+                <input type="password" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Password</label>
+            </div>
+        </form>
+        <div class="divider"></div>
+        <h1>Button</h1>
+
+        <div class="button raised blue" onclick="alert('toto')">
+            <div class="center">OK</div>
+            <div class="clic-action"></div>
+        </div>
+        <div class="button raised red">
+            <div class="center">CANCEL</div>
+            <div class="clic-action"></div>
+        </div>
+        <h2>Rounds</h2>
+
+        <div class="round raised red">
+            <span class="icon fa fa-cog"></span>
+            <div class="clic-action"></div>
+        </div>
+        <div class="round grow raised blue inv">
+            <span class="icon fa fa-user"></span>
+            <div class="clic-action"></div>
+        </div>
+        <div class="round black">
+            <span class="icon fa fa-plus-square"></span>
+            <div class="clic-action"></div>
+        </div>
+        <div class="round grow green">
+            <span class="icon fa fa-tag"></span>
+            <div class="clic-action"></div>
+        </div>
+        <h2>Icons</h2>
+
+        <div class="symbs raised center">
+            <i class="fa fa-cog"></i>
+            <div class="clic-action"></div>
+        </div>
+        <div class="symbs raised grow red center">
+            <i class="fa fa-plus-square"></i>
+            <div class="clic-action"></div>
+        </div>
+        <div class="symbs blue center">
+            <i class="fa fa-sign-in"></i>
+            <div class="clic-action"></div>
+        </div>
+        <div class="symbs green inv grow center">
+            <i class="fa fa-tag"></i>
+            <div class="clic-action"></div>
+        </div>
+
+        <div class="divider"></div>
+        <h1>Cards</h1>
+        <div class="card card-z-1">
+            <div class="card-header">
+                square depth 1
+            </div>
+            <div class="card-content">
+                A square card with a depth of one
+            </div>
+            <div class="card-footer">
+                <a href="#" class="link secondary">close</a>
+                <a href="#" class="link primary">open</a>
+            </div>
+        </div>
+        <div class="card card-z-2">
+            <div class="card-header">
+                square depth 2
+            </div>
+            <div class="card-content">
+                A square card with a depth of two
+            </div>
+            <div class="card-footer">
+                <a href="#" class="link default">cancel</a>
+                <a href="#" class="link secondary">delete</a>
+            </div>
+        </div>
+        <div class="card card-z-3">
+            <div class="card-header">
+                square depth 3
+            </div>
+            <div class="card-content">
+                A square card with a depth of tree
+            </div>
+            <div class="card-footer">
+                <a href="#" class="link secondary">delete</a>
+                <a href="#" class="link primary">save</a>
+            </div>
+        </div>
+        <div class="card card-rounded card-z-1">
+            <div class="card-header">
+                rounded depth 1
+            </div>
+            <div class="card-content">
+                A rounded card with a depth of one
+            </div>
+            <div class="card-footer">
+                <a href="#" class="link secondary">close</a>
+                <a href="#" class="link primary">open</a>
+            </div>
+        </div>
+        <div class="card card-rounded card-z-2">
+            <div class="card-header">
+                rounded depth 2
+            </div>
+            <div class="card-content">
+                A rounded card with a depth of two
+            </div>
+            <div class="card-footer">
+                <a href="#" class="link default">cancel</a>
+                <a href="#" class="link secondary">delete</a>
+            </div>
+        </div>
+        <div class="card card-rounded card-z-3">
+            <div class="card-header">
+                rounded depth 3
+            </div>
+            <div class="card-content">
+                A rounded card with a depth of tree
+            </div>
+            <div class="card-footer">
+                <a href="#" class="link secondary">close</a>
+                <a href="#" class="link primary">open</a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <h1>Links</h1>
+        <a href="#" class="link default">default</a>
+        <a href="#" class="link secondary">secondary</a>
+        <a href="#" class="link primary">primary</a>
+    </div>
+
+
+    <div class="dialog" id="modal-one" aria-hidden="true">
+      <div class="dialog-content card">
         <div class="card-header">
-            square depth 1
+          Dialog
         </div>
         <div class="card-content">
-            A square card with a depth of one
+          A dialog content. Content all info you need !
         </div>
         <div class="card-footer">
-            <a href="#" class="link secondary">close</a>
-            <a href="#" class="link primary">open</a>
+            <a href="#" class="link default">close</a>
+            <a href="#" class="link primary">validate</a>
         </div>
+      </div>
     </div>
-    <div class="card card-z-2">
-        <div class="card-header">
-            square depth 2
-        </div>
-        <div class="card-content">
-            A square card with a depth of two
-        </div>
-        <div class="card-footer">
-            <a href="#" class="link default">cancel</a>
-            <a href="#" class="link secondary">delete</a>
-        </div>
-    </div>
-    <div class="card card-z-3">
-        <div class="card-header">
-            square depth 3
-        </div>
-        <div class="card-content">
-            A square card with a depth of tree
-        </div>
-        <div class="card-footer">
-            <a href="#" class="link secondary">delete</a>
-            <a href="#" class="link primary">save</a>
-        </div>
-    </div>
-    <div class="card card-rounded card-z-1">
-        <div class="card-header">
-            rounded depth 1
-        </div>
-        <div class="card-content">
-            A rounded card with a depth of one
-        </div>
-        <div class="card-footer">
-            <a href="#" class="link secondary">close</a>
-            <a href="#" class="link primary">open</a>
-        </div>
-    </div>
-    <div class="card card-rounded card-z-2">
-        <div class="card-header">
-            rounded depth 2
-        </div>
-        <div class="card-content">
-            A rounded card with a depth of two
-        </div>
-        <div class="card-footer">
-            <a href="#" class="link default">cancel</a>
-            <a href="#" class="link secondary">delete</a>
-        </div>
-    </div>
-    <div class="card card-rounded card-z-3">
-        <div class="card-header">
-            rounded depth 3
-        </div>
-        <div class="card-content">
-            A rounded card with a depth of tree
-        </div>
-        <div class="card-footer">
-            <a href="#" class="link secondary">close</a>
-            <a href="#" class="link primary">open</a>
-        </div>
-    </div>
-    <div class="divider"></div>
-    <h1>Links</h1>
-    <a href="#" class="link default">default</a>
-    <a href="#" class="link secondary">secondary</a>
-    <a href="#" class="link primary">primary</a>
-</div>
 
-
-<div class="dialog" id="modal-one" aria-hidden="true">
-  <div class="dialog-content card">
-    <div class="card-header">
-      Dialog
-    </div>
-    <div class="card-content">
-      A dialog content. Content all info you need !
-    </div>
-    <div class="card-footer">
-        <a href="#" class="link default">close</a>
-        <a href="#" class="link primary">validate</a>
-    </div>
-  </div>
-</div>
-
+    <script src="js/material_actions.js"></script>
 </body>
 </html>

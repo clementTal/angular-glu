@@ -1,5 +1,5 @@
 .button {
-  width: 120px;
+  width: $button-width;
   height: $button-height;
   line-height: $button-height;
   @include border-radius(2px);
@@ -8,6 +8,7 @@
   color: #646464;
   cursor: pointer;
   display: inline-block;
+  overflow: hidden;
   &.blue {
     background-color: $blue;
     color: #fff;
@@ -24,6 +25,27 @@
     background-color: $black;
     color: #fff;
   }
+  &.clicked
+  {
+    .clic-action
+    {
+      @include transition(all 0.3s ease-in-out);
+      height: $button-width*2;
+      width: $button-width*2;
+      border-radius: $button-width*2;
+      top: -(($button-width) + ($button-height/2));
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+  .clic-action
+  {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 0px;
+    width: 0px;
+    position: relative;
+    top:  -$button-height/2;
+  }
 }
 
 .round {
@@ -36,7 +58,6 @@
   border-radius: 50%;
   color: #fff;
   overflow: hidden;
-  line-height: 56px;
   &.red {
     background-color: $red;
   }
@@ -51,5 +72,26 @@
   }
   &.inv {
     color: $black;
+  }
+  &.clicked
+  {
+    .clic-action
+    {
+      @include transition(all 0.3s ease-in-out);
+      height: $round-size*2;
+      width: $round-size*2;
+      border-radius: $round-size*2;
+      top: -($round-size*1.5);
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+  .clic-action
+  {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 0px;
+    width: 0px;
+    position: relative;
+    top: -($round-size/2);
   }
 }

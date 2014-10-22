@@ -36,8 +36,9 @@
       {
         visibility: hidden;
         display: inline-block;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: bold;
+        text-transform: uppercase;
       }
       &.selected, &.selected:hover
       {

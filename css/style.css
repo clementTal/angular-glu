@@ -61,25 +61,43 @@
   background-color: #fff;
   color: #646464;
   cursor: pointer;
-  display: inline-block; }
-  /* line 11, ../sass/misc/_button.scss */
+  display: inline-block;
+  overflow: hidden; }
+  /* line 12, ../sass/misc/_button.scss */
   .button.blue {
     background-color: #738ffe;
     color: #fff; }
-  /* line 15, ../sass/misc/_button.scss */
+  /* line 16, ../sass/misc/_button.scss */
   .button.red {
-    background-color: #e84e40;
+    background-color: #e51c23;
     color: #fff; }
-  /* line 19, ../sass/misc/_button.scss */
+  /* line 20, ../sass/misc/_button.scss */
   .button.green {
     background-color: #9ccc65;
     color: #fff; }
-  /* line 23, ../sass/misc/_button.scss */
+  /* line 24, ../sass/misc/_button.scss */
   .button.black {
     background-color: black;
     color: #fff; }
+  /* line 30, ../sass/misc/_button.scss */
+  .button.clicked .clic-action {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    height: 240px;
+    width: 240px;
+    border-radius: 240px;
+    top: -135px;
+    background-color: transparent; }
+  /* line 40, ../sass/misc/_button.scss */
+  .button .clic-action {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 0px;
+    width: 0px;
+    position: relative;
+    top: -15px; }
 
-/* line 29, ../sass/misc/_button.scss */
+/* line 51, ../sass/misc/_button.scss */
 .round {
   position: relative;
   display: inline-block;
@@ -89,23 +107,39 @@
   text-align: center;
   border-radius: 50%;
   color: #fff;
-  overflow: hidden;
-  line-height: 56px; }
-  /* line 40, ../sass/misc/_button.scss */
+  overflow: hidden; }
+  /* line 61, ../sass/misc/_button.scss */
   .round.red {
-    background-color: #e84e40; }
-  /* line 43, ../sass/misc/_button.scss */
+    background-color: #e51c23; }
+  /* line 64, ../sass/misc/_button.scss */
   .round.blue {
     background-color: #738ffe; }
-  /* line 46, ../sass/misc/_button.scss */
+  /* line 67, ../sass/misc/_button.scss */
   .round.green {
     background-color: #9ccc65; }
-  /* line 49, ../sass/misc/_button.scss */
+  /* line 70, ../sass/misc/_button.scss */
   .round.black {
     background-color: black; }
-  /* line 52, ../sass/misc/_button.scss */
+  /* line 73, ../sass/misc/_button.scss */
   .round.inv {
     color: black; }
+  /* line 78, ../sass/misc/_button.scss */
+  .round.clicked .clic-action {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    top: -75px;
+    background-color: transparent; }
+  /* line 88, ../sass/misc/_button.scss */
+  .round .clic-action {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 0px;
+    width: 0px;
+    position: relative;
+    top: -25px; }
 
 /* line 1, ../sass/misc/_cards.scss */
 .card {
@@ -334,26 +368,44 @@ input:focus ~ .highlight {
   width: 32px;
   height: 32px;
   line-height: 32px;
+  overflow: hidden;
   border-radius: 2px;
   font-size: 0.9em;
   background-color: #000;
   color: white;
   border-radius: 10px; }
-  /* line 12, ../sass/misc/_icons.scss */
+  /* line 13, ../sass/misc/_icons.scss */
   .symbs.red {
-    background-color: #e84e40;
-    border: 1px solid #e84e40; }
-  /* line 16, ../sass/misc/_icons.scss */
+    background-color: #e51c23;
+    border: 1px solid #e51c23; }
+  /* line 17, ../sass/misc/_icons.scss */
   .symbs.blue {
     background-color: #738ffe;
     border: 1px solid #738ffe; }
-  /* line 20, ../sass/misc/_icons.scss */
+  /* line 21, ../sass/misc/_icons.scss */
   .symbs.green {
     background-color: #9ccc65;
     border: 1px solid #9ccc65; }
-  /* line 24, ../sass/misc/_icons.scss */
+  /* line 25, ../sass/misc/_icons.scss */
   .symbs.inv {
     color: black; }
+  /* line 30, ../sass/misc/_icons.scss */
+  .symbs.clicked .clic-action {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    height: 64px;
+    width: 64px;
+    border-radius: 64px;
+    top: -48px;
+    background-color: transparent; }
+  /* line 40, ../sass/misc/_icons.scss */
+  .symbs .clic-action {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 0px;
+    width: 0px;
+    position: relative;
+    top: -16px; }
 
 /* line 1, ../sass/misc/_links.scss */
 a.link {
@@ -408,49 +460,51 @@ a.link {
       .menu .menu-items .menu-entry .helper {
         visibility: hidden;
         display: inline-block;
-        font-size: 12px; }
-      /* line 41, ../sass/misc/_menu.scss */
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: uppercase; }
+      /* line 43, ../sass/misc/_menu.scss */
       .menu .menu-items .menu-entry.selected, .menu .menu-items .menu-entry.selected:hover {
         background-color: #FFFFFF;
         color: #424242; }
-        /* line 45, ../sass/misc/_menu.scss */
+        /* line 47, ../sass/misc/_menu.scss */
         .menu .menu-items .menu-entry.selected.blue, .menu .menu-items .menu-entry.selected:hover.blue {
           background-color: #738ffe; }
-        /* line 46, ../sass/misc/_menu.scss */
-        .menu .menu-items .menu-entry.selected.red, .menu .menu-items .menu-entry.selected:hover.red {
-          background-color: #e84e40; }
-        /* line 47, ../sass/misc/_menu.scss */
+        /* line 48, ../sass/misc/_menu.scss */
+        .menu .menu-items .menu-entry.selected.pink, .menu .menu-items .menu-entry.selected:hover.pink {
+          background-color: #e91e63; }
+        /* line 49, ../sass/misc/_menu.scss */
         .menu .menu-items .menu-entry.selected.green, .menu .menu-items .menu-entry.selected:hover.green {
           background-color: #9ccc65; }
-        /* line 48, ../sass/misc/_menu.scss */
-        .menu .menu-items .menu-entry.selected.amber, .menu .menu-items .menu-entry.selected:hover.amber {
-          background-color: #ffca28; }
-        /* line 49, ../sass/misc/_menu.scss */
+        /* line 50, ../sass/misc/_menu.scss */
+        .menu .menu-items .menu-entry.selected.cyan, .menu .menu-items .menu-entry.selected:hover.cyan {
+          background-color: #00bcd4; }
+        /* line 51, ../sass/misc/_menu.scss */
         .menu .menu-items .menu-entry.selected.purple, .menu .menu-items .menu-entry.selected:hover.purple {
           background-color: #7e57c2; }
-        /* line 50, ../sass/misc/_menu.scss */
+        /* line 52, ../sass/misc/_menu.scss */
         .menu .menu-items .menu-entry.selected i, .menu .menu-items .menu-entry.selected:hover i {
           color: #424242; }
-      /* line 55, ../sass/misc/_menu.scss */
+      /* line 57, ../sass/misc/_menu.scss */
       .menu .menu-items .menu-entry:hover {
         background-color: #777777;
         color: #424242; }
-        /* line 59, ../sass/misc/_menu.scss */
+        /* line 61, ../sass/misc/_menu.scss */
         .menu .menu-items .menu-entry:hover.blue {
           background-color: #738ffe; }
-        /* line 60, ../sass/misc/_menu.scss */
-        .menu .menu-items .menu-entry:hover.red {
-          background-color: #e84e40; }
-        /* line 61, ../sass/misc/_menu.scss */
+        /* line 62, ../sass/misc/_menu.scss */
+        .menu .menu-items .menu-entry:hover.pink {
+          background-color: #e91e63; }
+        /* line 63, ../sass/misc/_menu.scss */
         .menu .menu-items .menu-entry:hover.green {
           background-color: #9ccc65; }
-        /* line 62, ../sass/misc/_menu.scss */
-        .menu .menu-items .menu-entry:hover.amber {
-          background-color: #ffca28; }
-        /* line 63, ../sass/misc/_menu.scss */
+        /* line 64, ../sass/misc/_menu.scss */
+        .menu .menu-items .menu-entry:hover.cyan {
+          background-color: #00bcd4; }
+        /* line 65, ../sass/misc/_menu.scss */
         .menu .menu-items .menu-entry:hover.purple {
           background-color: #7e57c2; }
-        /* line 64, ../sass/misc/_menu.scss */
+        /* line 66, ../sass/misc/_menu.scss */
         .menu .menu-items .menu-entry:hover i {
           visibility: visible;
           -webkit-transform: translateY(-50px);
@@ -459,10 +513,14 @@ a.link {
           -o-transform: translateY(-50px);
           transform: translateY(-50px);
           color: white; }
-  /* line 73, ../sass/misc/_menu.scss */
+  /* line 75, ../sass/misc/_menu.scss */
   .menu .menu-right {
     float: right;
     margin: 10px; }
+  /* line 80, ../sass/misc/_menu.scss */
+  .menu.fixed {
+    position: fixed;
+    top: 0px; }
 
 /* line 14, ../sass/_material.scss */
 body {

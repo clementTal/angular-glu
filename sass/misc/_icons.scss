@@ -1,9 +1,10 @@
 .symbs {
   display: inline-block;
   position: relative;
-  width: 32px;
-  height: 32px;
-  line-height: 32px;
+  width: $icons-size;
+  height: $icons-size;
+  line-height: $icons-size;
+  overflow: hidden;
   @include border-radius(2px);
   font-size: 0.9em;
   background-color: #000;
@@ -23,5 +24,26 @@
   }
   &.inv {
     color: $black;
+  }
+  &.clicked
+  {
+    .clic-action
+    {
+      @include transition(all 0.3s ease-in-out);
+      height: $icons-size*2;
+      width: $icons-size*2;
+      border-radius: $icons-size*2;
+      top: -($icons-size*1.5);
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+  .clic-action
+  {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 0px;
+    width: 0px;
+    position: relative;
+    top:  -($icons-size/2);
   }
 }
