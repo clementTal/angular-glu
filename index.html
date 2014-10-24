@@ -51,51 +51,20 @@
         </form>
         <div class="divider"></div>
         <h1>Button</h1>
+        <glu-button classes="'raised blue'" text="'OK'" click="buttonAction"></glu-button>
+        <glu-button classes="'raised red'" text="'CANCEL'"></glu-button>
 
-        <div class="button raised blue" data-ng-action="alert('toto')">
-            <div class="center">OK</div>
-            <div class="clic-action"></div>
-        </div>
-        <div class="button raised red">
-            <div class="center">CANCEL</div>
-            <div class="clic-action"></div>
-        </div>
         <h2>Rounds</h2>
+        <glu-round classes="'raised red'" icons="'fa fa-cog'" click="buttonAction"></glu-round>
+        <glu-round classes="'raised blue inv'" icons="'fa fa-user'"></glu-round>
+        <glu-round classes="'black'" icons="'fa fa-plus-square'"></glu-round>
+        <glu-round classes="'grow green'" icons="'fa fa-tag'"></glu-round>
 
-        <div class="round raised red">
-            <span class="icon fa fa-cog"></span>
-            <div class="clic-action"></div>
-        </div>
-        <div class="round grow raised blue inv">
-            <span class="icon fa fa-user"></span>
-            <div class="clic-action"></div>
-        </div>
-        <div class="round black">
-            <span class="icon fa fa-plus-square"></span>
-            <div class="clic-action"></div>
-        </div>
-        <div class="round grow green">
-            <span class="icon fa fa-tag"></span>
-            <div class="clic-action"></div>
-        </div>
-        <h2>Icons</h2>
-
-        <div class="symbs raised center">
-            <i class="fa fa-cog"></i>
-            <div class="clic-action"></div>
-        </div>
-        <div class="symbs raised grow red center">
-            <i class="fa fa-plus-square"></i>
-            <div class="clic-action"></div>
-        </div>
-        <div class="symbs blue center">
-            <i class="fa fa-sign-in"></i>
-            <div class="clic-action"></div>
-        </div>
-        <div class="symbs green inv grow center">
-            <i class="fa fa-tag"></i>
-            <div class="clic-action"></div>
-        </div>
+        <h2>Symbs</h2>
+        <glu-symbs classes="'raised'" icons="'fa fa-cog'"></glu-symbs>
+        <glu-symbs classes="'raised grow red'" icons="'fa fa-plus-square'"></glu-symbs>
+        <glu-symbs classes="'blue'" icons="'fa fa-sign-in'"></glu-symbs>
+        <glu-symbs classes="'green inv grow'" icons="'fa fa-tag'"></glu-symbs>
 
         <div class="divider"></div>
         <h1>Cards</h1>
@@ -194,11 +163,12 @@
       </div>
     </div>
 
-    <script src="js/material_actions.js"></script>
     <script src="/libs/angular.js"></script>
     <script src="/libs/angular-route.js"></script>
     <script src="js/app.js"></script>
     <script src="js/main.js"></script>
+
+    <script src="js/angluar_glu/angular-glu.js"></script>
 
 </body>
 </html>
