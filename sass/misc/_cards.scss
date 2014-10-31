@@ -34,24 +34,12 @@
 
 .card-z-1 {
   @include box-shadow($shadow-z-1);
-  &:after
-  {
-  	@include box-shadow($shadow-z-1-after);
-  }
 }
 
 .card-z-2 {
   @include box-shadow($shadow-z-2);
-  &:after
-  {
-    @include box-shadow($shadow-z-2-after);
-  }
 }
 
 .card-z-3 {
   @include box-shadow($shadow-z-3);
-  &:after
-  {
-    @include box-shadow($shadow-z-3-after);
-  }
 }

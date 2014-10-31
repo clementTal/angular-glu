@@ -6,6 +6,7 @@
   background-color: $menu-bg-color;
   display: inline-block;
   overflow: hidden;
+  z-index: 1000;
   .menu-title 
   {
     padding: 0 10px;
