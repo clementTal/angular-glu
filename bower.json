@@ -1,0 +1,43 @@
+{
+  "name": "angular-glu",
+  "description": "A lightweight library based on AngularJS & Google Material Design specifications",
+  "kewords": [
+    "AngularJS",
+    "Material Design",
+    "Framework"
+  ],
+  "homepage": "angular-glu.com",
+  "version": "0.0.1",
+  "authors": [
+    "clementTal"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/clementTal/angular-glu.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "libs",
+    "demo",
+    "gulpfile.js",
+    "build",
+    "*.md",
+    "package.json",
+    "index.html",
+    "app.yaml",
+    "app.js",
+    "launch.sh",
+    "/sass",
+    "/favicon.png",
+    "/fonts",
+    "release.py"
+  ],
+  "dependencies": {
+    "angular": "~1.3.3"
+  },
+  "devDependencies": {
+    "angular-route": "~1.3.3"
+  }
+}
