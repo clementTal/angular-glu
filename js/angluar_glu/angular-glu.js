@@ -19,7 +19,9 @@ angular.module('glu', ['ngRoute'])
                         clickedElm.classList.add('clicked');
                         window.setTimeout(function(){
                             clickedElm.classList.remove('clicked');
-                            scope.click();
+                            if (scope.click) {
+                                scope.click();
+                            }
                         }, 300);
                     }, true)
                 }
@@ -43,7 +45,9 @@ angular.module('glu', ['ngRoute'])
                             clickedElm.classList.add('clicked');
                             window.setTimeout(function(){
                                 clickedElm.classList.remove('clicked');
-                                scope.click();
+                                if (scope.click) {
+                                    scope.click();
+                                }
                             }, 300);
                         }, true)
                     }
@@ -67,7 +71,9 @@ angular.module('glu', ['ngRoute'])
                             clickedElm.classList.add('clicked');
                             window.setTimeout(function(){
                                 clickedElm.classList.remove('clicked');
-                                scope.click();
+                                if (scope.click) {
+                                    scope.click();
+                                }
                             }, 300);
                         }, true)
                     }

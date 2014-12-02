@@ -18,8 +18,8 @@ handlers:
 - url: /js
   static_dir: js
 
-- url: /libs
-  static_dir: libs
+- url: /bower_components
+  static_dir: bower_components
 
 - url: .*
   script: main.app
