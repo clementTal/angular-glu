@@ -11,6 +11,10 @@
     "material",
     "design"
   ],
+  "main": [
+    "css/angular-glu.css",
+    "js/angular-glu/angular-glu.js"
+  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
